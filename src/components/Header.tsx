@@ -40,7 +40,7 @@ export function Header() {
         >
           <Image
             src="/logo.png"
-            alt="AL Consulting — Calidad y Seguridad e Higiene"
+            alt={`${site.name} — Calidad y Seguridad e Higiene`}
             width={48}
             height={48}
             className={`h-9 w-9 shrink-0 object-contain sm:h-11 sm:w-11 ${
@@ -54,10 +54,10 @@ export function Header() {
                 solid ? "text-navy" : "text-white"
               }`}
             >
-              AL Consulting
+              {site.name}
             </span>
             <span
-              className={`hidden text-[11px] font-medium sm:block ${
+              className={`hidden text-[11px] font-medium min-[400px]:block ${
                 solid ? "text-blue" : "text-light-blue"
               }`}
             >

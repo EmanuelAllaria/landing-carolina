@@ -10,14 +10,14 @@ export function Footer() {
         <div className="flex items-start gap-3">
           <Image
             src="/logo.png"
-            alt="AL Consulting"
+            alt={site.name}
             width={52}
             height={52}
             className="h-11 w-11 shrink-0 rounded-md bg-white object-contain p-1 sm:h-12 sm:w-12"
           />
           <div className="min-w-0">
             <p className="font-display text-lg font-semibold sm:text-xl">
-              AL Consulting
+              {site.name}
             </p>
             <p className="mt-1 text-sm text-light-blue">{site.claim}</p>
             <a

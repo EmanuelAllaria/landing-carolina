@@ -17,23 +17,23 @@ export function Inspections() {
           </p>
           <h2
             id="inspections-heading"
-            className="font-display mt-3 text-3xl font-semibold text-navy sm:text-4xl"
+            className="font-display mt-2 text-[1.65rem] font-semibold text-navy sm:mt-3 sm:text-4xl"
           >
             {inspections.headline}
           </h2>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted sm:text-lg">
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted sm:mt-4 sm:text-lg">
             {inspections.description}
           </p>
         </Reveal>
 
-        <div className="mt-10 grid gap-5 sm:gap-6 md:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-6 md:grid-cols-3">
           {inspections.points.map((point, index) => (
             <Reveal key={point}>
-              <article className="h-full border-l-4 border-blue bg-white/70 py-1 pl-4 sm:pl-5">
+              <article className="h-full rounded-xl border-l-4 border-blue bg-white/80 py-3 pl-4 sm:rounded-none sm:bg-white/70 sm:py-1 sm:pl-5">
                 <p className="text-sm font-bold tracking-wide text-blue">
                   0{index + 1}
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-ink/85 sm:text-base">
+                <p className="mt-2 text-sm leading-relaxed text-ink/85 sm:mt-3 sm:text-base">
                   {point}
                 </p>
               </article>
@@ -41,10 +41,10 @@ export function Inspections() {
           ))}
         </div>
 
-        <Reveal className="mt-10">
+        <Reveal className="mt-8 sm:mt-10">
           <a
             href="#contacto"
-            className="inline-flex w-full items-center justify-center rounded-md bg-blue px-6 py-3.5 text-base font-semibold text-white transition hover:bg-navy sm:w-auto"
+            className="inline-flex min-h-12 w-full items-center justify-center rounded-md bg-blue px-5 py-3 text-base font-semibold text-white transition hover:bg-navy sm:w-auto sm:px-6 sm:py-3.5"
           >
             {inspections.cta}
           </a>

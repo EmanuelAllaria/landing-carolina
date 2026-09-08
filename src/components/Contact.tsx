@@ -18,7 +18,7 @@ export function Contact() {
     const message = String(data.get("message") || "").trim();
 
     const subject = encodeURIComponent(
-      `Consulta AL Consulting${company ? ` — ${company}` : ""}`,
+      `Consulta ALConsulting${company ? ` — ${company}` : ""}`,
     );
     const body = encodeURIComponent(
       `Nombre: ${name}\nEmail: ${userEmail}\nEmpresa: ${company}\n\n${message}`,
@@ -138,7 +138,7 @@ export function Contact() {
                 <textarea
                   name="message"
                   required
-                  rows={5}
+                  rows={4}
                   className="w-full resize-y rounded-md border border-navy/15 bg-surface px-3 py-2.5 text-ink outline-none transition focus:border-blue focus:ring-2 focus:ring-light-blue/40"
                 />
               </label>

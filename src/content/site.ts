@@ -1,6 +1,6 @@
 export const site = {
-  name: "AL Consulting",
-  legalName: "AL Consulting",
+  name: "ALConsulting",
+  legalName: "ALConsulting",
   claim: "Calidad • Seguridad e Higiene",
   url: "https://alconsulting.com.ar",
   email: "calidad@alconsulting.com.ar",
@@ -21,13 +21,14 @@ export const site = {
   locale: "es_AR",
   seo: {
     title:
-      "AL Consulting | Consultoría en Calidad, Metrología y Seguridad e Higiene",
+      "ALConsulting | Consultoría en Calidad, Metrología y Seguridad e Higiene",
     description:
-      "Consultoría en sistemas de gestión, mejora de procesos, metrología, seguridad e higiene, inspecciones y tramitaciones ADA. Procesos claros. Empresas más eficientes.",
+      "Consultoría en sistemas de gestión, mejora de procesos, metrología, seguridad e higiene, inspecciones y tramitaciones ADA.",
     keywords: [
-      "AL Consulting",
+      "ALConsulting",
       "consultoría calidad",
       "ISO 9001",
+      "ISO 14001",
       "ISO 45001",
       "ISO 17025",
       "metrología",
@@ -49,173 +50,138 @@ export const site = {
   ],
   hero: {
     headline: "Procesos claros. Empresas más eficientes.",
-    subheadline:
-      "Consultoría en Sistemas de Gestión, Mejora de Procesos, Metrología y Seguridad e Higiene",
     support:
-      "Ayudamos a las organizaciones a ordenar su gestión, optimizar sus procesos, mejorar sus condiciones de trabajo e implementar sistemas que funcionen en la práctica.",
+      "Sistemas de gestión, metrología y seguridad e higiene que funcionan en la práctica.",
     cta: "Hablemos",
   },
   about: {
-    title: "Mejoramos la forma en que trabaja tu organización",
-    paragraphs: [
-      "En AL Consulting acompañamos a empresas que buscan profesionalizar su gestión, mejorar sus procesos, implementar normas ISO, fortalecer su gestión metrológica y desarrollar entornos de trabajo más seguros.",
-      "Trabajamos con un enfoque práctico, adaptando cada solución a la realidad de la organización.",
-      "Nuestro objetivo no es solamente cumplir requisitos, sino desarrollar procesos claros, eficientes y seguros, que permitan trabajar mejor, reducir riesgos y tomar decisiones con información confiable.",
-    ],
+    title:
+      "Tu socio estratégico en excelencia operativa, cumplimiento normativo y cultura preventiva.",
+    lead: "Acompañamos a empresas a profesionalizar su gestión, implementar normas ISO y crear entornos de trabajo más seguros, con soluciones adaptadas a cada organización.",
+    aside: {
+      lead: "Conocé nuestros servicios más destacados:",
+      items: [
+        "Implementación ISO 9001, 14001 y 45001",
+        "Análisis y mejora de procesos",
+        "Metrología e ISO/IEC 17025",
+        "Higiene y seguridad integral",
+        "Tramitaciones",
+      ],
+    },
   },
   quality: {
-    title: "Calidad",
+    title: "Sistemas de gestión, procesos y metrología",
     intro:
-      "Diseñamos e implementamos sistemas de gestión que profesionalizan la operación, ordenan los procesos y aportan valor real al negocio.",
+      "Implementamos sistemas que ordenan la operación y aportan valor real al negocio.",
     norms: [
       {
         code: "ISO 9001",
         name: "Calidad",
+        description: "Procesos claros, mejora continua y foco en el cliente.",
+      },
+      {
+        code: "ISO 14001",
+        name: "Medio Ambiente",
         description:
-          "Sistemas de gestión de la calidad orientados a procesos claros, mejora continua y satisfacción del cliente.",
+          "Mejora continua del desempeño ambiental de la organización.",
       },
       {
         code: "ISO 45001",
-        name: "Seguridad y Salud en el Trabajo",
-        description:
-          "Gestión de riesgos laborales y entornos de trabajo más seguros, alineados a la estrategia de la organización.",
+        name: "Seguridad y Salud",
+        description: "Gestión de riesgos y entornos de trabajo más seguros.",
       },
       {
         code: "ISO/IEC 17025",
         name: "Laboratorios",
-        description:
-          "Requisitos para laboratorios de ensayo y calibración: competencia técnica, trazabilidad y resultados confiables.",
+        description: "Competencia técnica, trazabilidad y resultados confiables.",
       },
     ],
     stages: [
       {
         step: "1",
         title: "Preparación",
-        items: [
-          "Relevamiento de procesos de dirección, operativos y de apoyo",
-          "Diagnóstico de madurez del sistema de gestión",
-          "Capacitación en conceptos y herramientas de normas ISO",
-        ],
+        summary: "Diagnóstico, relevamiento y capacitación inicial.",
       },
       {
         step: "2",
         title: "Implementación",
-        items: [
-          "Difusión del estándar y alineación de equipos",
-          "Documentación y puesta en marcha de procesos",
-          "Implementación de requisitos de la norma aplicable",
-        ],
+        summary: "Documentación, procesos y puesta en marcha.",
       },
       {
         step: "3",
         title: "Verificación",
-        items: [
-          "Auditorías internas con consultores especializados",
-          "Revisión por la dirección y gestión de hallazgos",
-          "Acompañamiento ante el ente certificador",
-        ],
+        summary: "Auditorías internas y acompañamiento a certificación.",
       },
       {
         step: "4",
         title: "Mejora continua",
-        items: [
-          "Soporte en el mantenimiento del sistema",
-          "Auditorías internas periódicas",
-          "Mejora del sistema de gestión con foco en resultados",
-        ],
+        summary: "Mantenimiento del sistema con foco en resultados.",
       },
     ],
+    servicesHeading: "¿Cómo podemos ayudarte?",
     services: [
       {
         title: "Capacitaciones",
-        description:
-          "Desarrollamos capacitaciones adaptadas a las necesidades de cada organización.",
+        description: "Formación a medida para tu equipo.",
         items: [
           "Sistemas de Gestión ISO",
           "Auditorías internas",
           "Gestión por procesos",
-          "Mejora continua",
           "Metrología general",
-          "Incertidumbre de medición",
-          "Gestión y control de instrumentos de medición",
         ],
       },
       {
         title: "Mejora de Procesos",
-        description:
-          "Analizamos cómo funciona actualmente la organización para identificar oportunidades de mejora y desarrollar formas de trabajo más simples y eficientes.",
+        description: "Formas de trabajo más simples y eficientes.",
         items: [
-          "Relevamiento y análisis de procesos",
-          "Mapeo de procesos",
-          "Definición de roles y responsabilidades",
-          "Desarrollo de procedimientos",
-          "Identificación de riesgos y oportunidades",
-          "Definición de indicadores de gestión",
-          "Optimización y estandarización de procesos",
-          "Mejora continua",
+          "Relevamiento y análisis",
+          "Procedimientos e indicadores",
+          "Roles y responsabilidades",
+          "Optimización y estandarización",
         ],
       },
       {
         title: "Metrología",
-        description:
-          "Brindamos soporte técnico para desarrollar y fortalecer la gestión de las mediciones dentro de la organización.",
+        description: "Mediciones confiables para decidir mejor.",
         items: [
-          "Gestión de equipos de medición",
-          "Desarrollo de procedimientos de calibración",
-          "Evaluación de incertidumbre de medición",
+          "Gestión de equipos",
+          "Calibración e incertidumbre",
           "Trazabilidad metrológica",
-          "Evaluación de certificados de calibración",
-          "Gestión de laboratorios",
-          "Implementación de requisitos ISO/IEC 17025",
-          "Capacitación técnica en metrología",
+          "Requisitos ISO/IEC 17025",
         ],
       },
     ],
+    servicesCta: "Consultar otros servicios",
   },
   safety: {
-    title: "Seguridad e Higiene",
+    title: "Servicio Integral de Higiene y Seguridad",
     integral: {
-      title: "Servicio Integral de Seguridad e Higiene",
-      description:
-        "Soluciones integrales para la prevención de riesgos laborales. Desde análisis de riesgo, mapas de riesgos, planes de prevención, procedimientos de trabajo seguro, controles de ingeniería, capacitaciones laborales, investigaciones de accidentes, auditorías y revisiones, garantizamos el cumplimiento de las normativas vigentes.",
-      highlights: [
+      title: "Higiene y Seguridad en la Industria",
+      lead: "Prevención de riesgos, cumplimiento legal y mejores condiciones de trabajo, adaptados a cada planta y proceso.",
+      legal:
+        "Trabajamos bajo la Ley 19.587 y el Decreto 351/79: relevamientos, evaluaciones, mediciones, capacitaciones y planes de mejora.",
+      includes: [
         "Medición de contaminantes",
         "Capacitaciones",
         "Protección contra incendios",
-      ],
-      includes: [
-        "Mapa de riesgo",
-        "Análisis de riesgo",
-        "Capacitaciones generales y específicas",
-        "Chequeos generales edilicios",
-        "Estudios de ruido — Res. 85/12",
-        "Asesoramiento ante inspecciones",
-        "Planos de evacuación",
-        "Simulacros",
-        "Estudios de iluminación — Res. 84/12",
-        "Estudios ergonómicos — Res. 886/15",
-        "Estudio de carga de fuego",
+        "Puesta a tierra y continuidad de masas — Res. SRT 900/15",
       ],
     },
     construction: {
-      title: "Seguridad e Higiene en la Construcción",
-      description:
-        "Nuestros servicios abarcan un amplio espectro de tareas, adaptándonos a las necesidades específicas de cada proyecto: programas de seguridad, análisis de trabajo seguro (ATS), trabajos en altura según Res. 61/23, técnicos permanentes para tu proyecto y auditorías de obra.",
-      programTitle: "Programa de seguridad",
-      programLead:
-        "¿Necesitás avisos de obra, programas de seguridad según Res. 319/19, 51/96, 35/97, 503/98 para construcciones, reformas, excavaciones o montajes?",
-      programBody:
-        "Nuestro departamento técnico de obras puede tramitarte dicho documento con la ART, garantizándote la aprobación y asesorándote para el ingreso o para cumplir la normativa de seguridad en la construcción.",
+      title: "Higiene y Seguridad en la construcción",
+      lead: "Asistencia técnica para obras, contratistas y comitentes, conforme al Decreto 911/96.",
+      body: "Elaboramos, presentamos y seguimos el Programa de Seguridad ante la ART. Contamos con técnicos permanentes y auditorías de obra para verificar medidas preventivas.",
       includes: [
         "Legajos técnicos",
         "Firma de planos de obra",
-        "Cronogramas de capacitaciones",
         "Confección de programas de seguridad",
         "Verificación de riesgos y medidas preventivas",
         "Relevamiento de Agentes de Riesgo (RAR)",
         "Investigación de accidentes",
-        "Auditorías a subcontratistas",
-        "Asesoramiento ante inspecciones",
+        "Medición de Contaminantes",
+        "Capacitación del personal",
+        "Programas de Seguridad y Avisos de Obra — Res. SRT 319/19, 51/96, 35/97 y 503/98",
+        "Asistencia ante ART, contratistas e inspecciones",
       ],
     },
   },
@@ -223,18 +189,18 @@ export const site = {
     title: "Inspecciones",
     headline: "¿Te inspeccionaron?",
     description:
-      "Contamos con un equipo especializado en resolver actas de inspección. Te damos garantías sobre los pedidos que el ente gubernamental te solicitó en materia de seguridad e higiene y medio ambiente.",
+      "Resolvemos actas de inspección en seguridad, higiene y medio ambiente, con acompañamiento en cada etapa.",
     points: [
-      "Cumplimos los plazos de intimación entregándote la documentación necesaria y asesorándote en todo el proceso.",
-      "Te acompañamos antes, durante y después de la verificación para que superes los controles sin inconvenientes.",
-      "Si hay puntos que no nos corresponden, te orientamos cómo cumplirlos para evitar costos innecesarios.",
+      "Documentación y asesoramiento dentro de los plazos de intimación.",
+      "Acompañamiento antes, durante y después de la verificación.",
+      "Orientación clara para evitar costos innecesarios.",
     ],
     cta: "Solicitar asesoramiento",
   },
   ada: {
     title: "Tramitaciones ADA",
     intro:
-      "Gestionamos prefactibilidades, aptitudes y permisos ante la Autoridad del Agua (ADA) de la Provincia de Buenos Aires, con un proceso claro y acompañamiento técnico.",
+      "Prefactibilidades, aptitudes y permisos ante la Autoridad del Agua de la Provincia de Buenos Aires.",
     steps: [
       {
         step: "1",
@@ -243,21 +209,19 @@ export const site = {
       },
       {
         step: "2",
-        title: "Obtención de prefactibilidad",
+        title: "Prefactibilidad",
         description:
-          "Aptitud hidráulica, permiso de explotación del recurso hídrico y permiso de vuelco.",
+          "Aptitud hidráulica, explotación del recurso y permiso de vuelco.",
       },
       {
         step: "3",
-        title: "Autorizaciones para obras en ejecución",
-        description:
-          "Aptitud hidráulica para obra (APHO), autorización de perforación (PA) y autorizaciones asociadas al proyecto.",
+        title: "Obras en ejecución",
+        description: "APHO, perforación y autorizaciones del proyecto.",
       },
       {
         step: "4",
-        title: "Permisos para establecimiento u obra ejecutada",
-        description:
-          "Aptitud hidráulica (CAH), permiso de explotación del recurso hídrico y permiso de vuelco (PV).",
+        title: "Obra ejecutada",
+        description: "CAH, explotación del recurso y permiso de vuelco.",
       },
     ],
   },

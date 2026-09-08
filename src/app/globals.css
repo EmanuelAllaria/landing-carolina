@@ -29,11 +29,11 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 body {
-  overflow-x: clip;
+  overflow-x: hidden;
   background:
     radial-gradient(1200px 600px at 10% -10%, rgba(74, 163, 224, 0.18), transparent 55%),
     radial-gradient(900px 500px at 100% 0%, rgba(27, 107, 179, 0.12), transparent 50%),
@@ -52,14 +52,14 @@ body {
 }
 
 .section-pad {
-  padding-block: clamp(3.25rem, 7vw, 6.5rem);
+  padding-block: clamp(2.5rem, 5.5vw, 6.5rem);
 }
 
 .container-page {
   width: min(1120px, 100%);
   margin-inline: auto;
-  padding-inline: max(1.25rem, env(safe-area-inset-left, 0px))
-    max(1.25rem, env(safe-area-inset-right, 0px));
+  padding-inline: max(1rem, env(safe-area-inset-left, 0px))
+    max(1rem, env(safe-area-inset-right, 0px));
   box-sizing: border-box;
 }
 
@@ -88,11 +88,21 @@ video {
   transition:
     opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  /* If JS never marks .is-visible, still show content */
+  animation: reveal-failsafe 0.01s linear 2s forwards;
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+  animation: none;
+}
+
+@keyframes reveal-failsafe {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes hero-rise {
@@ -108,23 +118,22 @@ video {
 
 .hero-animate > * {
   opacity: 0;
-  animation: hero-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation:
+    hero-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+    reveal-failsafe 0.01s linear 1.2s forwards;
 }
 
 .hero-animate > *:nth-child(1) {
   animation-delay: 0.05s;
 }
 .hero-animate > *:nth-child(2) {
-  animation-delay: 0.18s;
+  animation-delay: 0.16s;
 }
 .hero-animate > *:nth-child(3) {
-  animation-delay: 0.3s;
+  animation-delay: 0.28s;
 }
 .hero-animate > *:nth-child(4) {
-  animation-delay: 0.42s;
-}
-.hero-animate > *:nth-child(5) {
-  animation-delay: 0.54s;
+  animation-delay: 0.4s;
 }
 
 @media (prefers-reduced-motion: reduce) {

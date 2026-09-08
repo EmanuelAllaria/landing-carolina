@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/logo.png",
-        width: 1254,
-        height: 1254,
-        alt: "Logo AL Consulting",
+        width: 1136,
+        height: 946,
+        alt: "Logo ALConsulting",
       },
     ],
   },

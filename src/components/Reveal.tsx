@@ -15,18 +15,34 @@ export function Reveal({
     const node = ref.current;
     if (!node) return;
 
+    const show = () => {
+      node.classList.add("is-visible");
+    };
+
+    if (typeof IntersectionObserver === "undefined") {
+      show();
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          node.classList.add("is-visible");
+          show();
           observer.unobserve(node);
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+      { threshold: 0.05, rootMargin: "0px 0px -10% 0px" },
     );
 
     observer.observe(node);
-    return () => observer.disconnect();
+
+    // Failsafe: never leave content invisible
+    const fallback = window.setTimeout(show, 1800);
+
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(fallback);
+    };
   }, []);
 
   return (
