@@ -65,7 +65,7 @@ export const site = {
         "Análisis y mejora de procesos",
         "Metrología e ISO/IEC 17025",
         "Higiene y seguridad integral",
-        "Tramitaciones",
+        "Tramitaciones ADA",
       ],
     },
   },
@@ -82,8 +82,7 @@ export const site = {
       {
         code: "ISO 14001",
         name: "Medio Ambiente",
-        description:
-          "Mejora continua del desempeño ambiental de la organización.",
+        description: "Gestión de los aspectos e impactos ambientales.",
       },
       {
         code: "ISO 45001",
@@ -161,8 +160,16 @@ export const site = {
       legal:
         "Trabajamos bajo la Ley 19.587 y el Decreto 351/79: relevamientos, evaluaciones, mediciones, capacitaciones y planes de mejora.",
       includes: [
+        "Mapa de riesgo",
+        "Análisis de riesgo",
+        "Capacitaciones generales y específicas",
+        "Chequeos generales edilicios",
         "Medición de contaminantes",
-        "Capacitaciones",
+        "Asesoramiento ante inspecciones de entes privados o gubernamentales",
+        "Planos de evacuación",
+        "Simulacros",
+        "Estudios ergonómicos — Res. 886/15",
+        "Estudio de carga de fuego",
         "Protección contra incendios",
         "Puesta a tierra y continuidad de masas — Res. SRT 900/15",
       ],
@@ -199,29 +206,31 @@ export const site = {
   },
   ada: {
     title: "Tramitaciones ADA",
-    intro:
-      "Prefactibilidades, aptitudes y permisos ante la Autoridad del Agua de la Provincia de Buenos Aires.",
+    heading:
+      "Trámites que realiza ALConsulting ante la Autoridad del Agua (ADA)",
     steps: [
       {
         step: "1",
         title: "Empadronamiento",
-        description: "Alta de usuario e inmueble ante ADA.",
+        description: "Alta de usuario e inmueble",
       },
       {
         step: "2",
-        title: "Prefactibilidad",
+        title: "Obtención de prefactibilidad",
         description:
-          "Aptitud hidráulica, explotación del recurso y permiso de vuelco.",
+          "Aptitud Hidráulica, Permiso de Explotación del Recurso Hídrico y Permiso Vuelco.",
       },
       {
         step: "3",
-        title: "Obras en ejecución",
-        description: "APHO, perforación y autorizaciones del proyecto.",
+        title: "Autorizaciones para obras/proyecto en ejecución",
+        description:
+          "Aptitud Hidráulica para Obra (APHO), Autorización de Perforación (PA), Autorización de Ejecución de Obra para Explotación Superficial. Aptitud Tecnológica para Vertidos",
       },
       {
         step: "4",
-        title: "Obra ejecutada",
-        description: "CAH, explotación del recurso y permiso de vuelco.",
+        title: "Permisos para establecimiento instalado u obra ejecutada",
+        description:
+          "Aptitud Hidráulica (CAH), permiso de explotación del recurso hídrico (subterránea o superficial) y permiso de vuelco (PV).",
       },
     ],
   },

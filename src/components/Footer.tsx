@@ -9,11 +9,11 @@ export function Footer() {
       <div className="container-page flex flex-col gap-8 py-8 sm:py-10 lg:flex-row lg:items-start lg:justify-between">
         <div className="flex items-start gap-3">
           <Image
-            src="/logo.png"
+            src="/logo-mark.png"
             alt={site.name}
-            width={52}
-            height={52}
-            className="h-11 w-11 shrink-0 rounded-md bg-white object-contain p-1 sm:h-12 sm:w-12"
+            width={96}
+            height={55}
+            className="h-9 w-auto shrink-0 rounded-md bg-white object-contain p-1 sm:h-11"
           />
           <div className="min-w-0">
             <p className="font-display text-lg font-semibold sm:text-xl">

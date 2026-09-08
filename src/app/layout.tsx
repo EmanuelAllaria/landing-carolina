@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     description: site.seo.description,
     images: [
       {
-        url: "/logo.png",
-        width: 1136,
-        height: 946,
+        url: "/logo-mark.png",
+        width: 1064,
+        height: 610,
         alt: "Logo ALConsulting",
       },
     ],
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: site.seo.title,
     description: site.seo.description,
-    images: ["/logo.png"],
+    images: ["/logo-mark.png"],
   },
   robots: {
     index: true,
@@ -85,8 +85,8 @@ function JsonLd() {
         url: site.url,
         email: site.email,
         telephone: site.phones.map((p) => p.tel),
-        logo: `${site.url}/logo.png`,
-        image: `${site.url}/logo.png`,
+        logo: `${site.url}/logo-mark.png`,
+        image: `${site.url}/logo-mark.png`,
         description: site.seo.description,
         areaServed: {
           "@type": "Country",

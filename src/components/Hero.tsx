@@ -29,11 +29,11 @@ export function Hero() {
         <div className="hero-animate max-w-2xl text-white sm:max-w-3xl">
           <div className="mb-4 flex items-center gap-3 sm:mb-6 sm:gap-4">
             <Image
-              src="/logo.png"
+              src="/logo-mark.png"
               alt="Logo ALConsulting"
-              width={88}
-              height={88}
-              className="h-12 w-12 shrink-0 rounded-lg bg-white/95 object-contain p-1 shadow-lg sm:h-16 sm:w-16 md:h-20 md:w-20 md:p-1.5"
+              width={160}
+              height={92}
+              className="h-11 w-auto shrink-0 drop-shadow-lg sm:h-14 md:h-16"
               priority
             />
             <div className="min-w-0">

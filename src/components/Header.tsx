@@ -39,12 +39,12 @@ export function Header() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/logo.png"
+            src="/logo-mark.png"
             alt={`${site.name} — Calidad y Seguridad e Higiene`}
-            width={48}
-            height={48}
-            className={`h-9 w-9 shrink-0 object-contain sm:h-11 sm:w-11 ${
-              solid ? "" : "rounded-md bg-white/95 p-0.5"
+            width={80}
+            height={46}
+            className={`h-8 w-auto shrink-0 sm:h-10 ${
+              solid ? "" : "rounded-sm bg-white/95 p-0.5"
             }`}
             priority
           />
